@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Laboratorio 01</title>
+</h:head>
+<h:body>
+	<h:form>
+		<div align="center">
+			<h:panelGrid columns="2">
+				<f:facet name="header">
+					<h:outputLabel value="Cadastro" />
+				</f:facet>
+				<h:outputLabel value="Nome:" />
+				<h:inputText value="#{cadastro.funcionario.nome}" />
+				<h:outputLabel value="Salario:" />
+				<h:inputText value="#{cadastro.funcionario.salarioBruto}"/>
+			</h:panelGrid>
+			<h:commandButton value="Cadastrar" action="#{cadastro.actionCadastrar}"/>
+		</div>
+	</h:form>
+</h:body>
+</html>
